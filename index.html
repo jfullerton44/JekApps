@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jacob Fullerton · JekApps</title>
+  <meta name="description" content="Jacob Fullerton is a Senior Software Engineer at Microsoft who builds cloud infrastructure, developer tools and AI systems, and ships his own apps under JekApps: TrackYourCash, 1Poker and an automated prediction-market trading system.">
+  <link rel="canonical" href="https://jekapps.com/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111214" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jekapps.com/">
+  <meta property="og:title" content="Jacob Fullerton · JekApps">
+  <meta property="og:description" content="Senior Software Engineer at Microsoft. Builder of TrackYourCash, 1Poker and an automated prediction-market trading system.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="JekApps home">
+        <span class="brand-mark" aria-hidden="true">J</span>
+        <span class="brand-name">JekApps</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-list">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li class="nav-hide-sm"><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== Intro ============================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <p class="eyebrow">About</p>
+        <h1 id="hero-title">Hi, I'm Jacob Fullerton.</h1>
+        <p class="lede">
+          I'm a Senior Software Engineer at Microsoft, where I build cloud infrastructure,
+          developer tooling and AI systems. Outside of work I design, build and run my own
+          products end to end. <strong>JekApps</strong> is where they live.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:websiteHello@jsfullerton.com">Email me</a>
+          <a class="btn" href="https://github.com/jfullerton44" rel="me noopener" target="_blank">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/jfullerton44" rel="me noopener" target="_blank">LinkedIn</a>
+          <a class="btn btn-ghost" href="#experience">View résumé ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== Projects ============================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Things I've built</h2>
+          <p class="section-sub">Personal projects I design, build, deploy and operate myself.</p>
+        </div>
+
+        <div class="projects">
+          <!-- TrackYourCash -->
+          <article class="project" style="--project: var(--tyc)" aria-labelledby="tyc-title">
+            <div class="project-main">
+            <div class="project-top">
+              <span class="tag"><span class="dot" aria-hidden="true"></span>Live web app</span>
+              <span class="project-meta">2026 – present</span>
+            </div>
+            <h3 id="tyc-title">TrackYourCash</h3>
+            <p class="project-tagline">Self-hosted personal finance for friends and family.</p>
+            <p class="project-desc">
+              An invite-only budgeting and net-worth app where every person gets their own private household.
+              Bank accounts sync automatically each night, transactions are categorized by rules, merchant memory
+              and opt-in AI, and a full set of reports shows where the money goes. It also works as a Claude
+              connector over MCP, so a household can ask questions about its own finances in plain English.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://cash.jekapps.com" target="_blank" rel="noopener">Open cash.jekapps.com ↗</a>
+            </div>
+            </div>
+            <div class="project-details">
+            <ul class="features">
+              <li>Automatic bank sync with encrypted credentials, retries and failure alerts</li>
+              <li>Budgets, recurring-bill detection, savings goals, debt payoff and investments</li>
+              <li>Cash-flow Sankey, spending breakdowns and net-worth history</li>
+              <li>OAuth-secured MCP server with read-only or audited write access per household</li>
+              <li>Tenant isolation enforced twice: EF Core query filters and Postgres row-level security</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li>C# / .NET 10</li><li>ASP.NET Core</li><li>PostgreSQL</li><li>React 19</li>
+              <li>TypeScript</li><li>Tailwind CSS</li><li>Azure Container Apps</li><li>Bicep</li><li>MCP</li>
+            </ul>
+            </div>
+          </article>
+
+          <!-- 1Poker -->
+          <article class="project" style="--project: var(--poker)" aria-labelledby="poker-title">
+            <div class="project-main">
+            <div class="project-top">
+              <span class="tag"><span class="dot" aria-hidden="true"></span>On the App Store</span>
+              <span class="project-meta">iPhone &amp; iPad</span>
+            </div>
+            <h3 id="poker-title">1Poker</h3>
+            <p class="project-tagline">A private poker tracker and study tool.</p>
+            <p class="project-desc">
+              A native iOS app for live poker players. Track cash games and tournaments as you play, record
+              hands on a visual table and replay them street by street, and see where your results really come
+              from. Everything stays on the device: no account, no ads, no analytics and no third-party code.
+            </p>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://apps.apple.com/us/app/1poker/id6756220942" target="_blank" rel="noopener">Get it on the App Store ↗</a>
+              <a class="btn" href="https://1poker.app" target="_blank" rel="noopener">1poker.app ↗</a>
+            </div>
+            </div>
+            <div class="project-details">
+            <ul class="features">
+              <li>Live session tracking with stack charts, rebuys, add-ons and hourly rate</li>
+              <li>Hand recorder and replayer for Hold'em and the Omaha family</li>
+              <li>Monte Carlo equity, pot-odds and ICM calculators</li>
+              <li>On-device AI hand parser built on Apple's Foundation Models</li>
+              <li>Optional iCloud sync to the user's own private database, plus CSV import/export</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li>Swift</li><li>SwiftUI</li><li>SwiftData</li><li>CloudKit</li>
+              <li>Foundation Models</li><li>XCTest</li><li>Zero dependencies</li>
+            </ul>
+            </div>
+          </article>
+
+          <!-- Prediction market trading system -->
+          <article class="project" style="--project: var(--arb)" aria-labelledby="arb-title">
+            <div class="project-main">
+            <div class="project-top">
+              <span class="tag"><span class="dot" aria-hidden="true"></span>Running in production</span>
+              <span class="project-meta">2024 – present</span>
+            </div>
+            <h3 id="arb-title">Prediction Market Trading System</h3>
+            <p class="project-tagline">Automated, event-driven trading on prediction markets.</p>
+            <p class="project-desc">
+              A fully automated trading system that watches prediction markets in real time and acts within
+              milliseconds when it finds a pricing inefficiency. It runs unattended in Docker on Azure, with
+              live order-book streams, an execution engine built around safety checks and a monitoring stack
+              to keep an eye on it all. The venues and strategy stay private, but the engineering is the fun part.
+            </p>
+            <p class="project-note">Source code is private.</p>
+            </div>
+            <div class="project-details">
+            <ul class="features">
+              <li>Asynchronous, event-driven core reacting to WebSocket market-data streams</li>
+              <li>LLM-assisted market analysis layered on fast deterministic heuristics</li>
+              <li>Execution engine with position tracking, guard rails and a dedicated safety test suite</li>
+              <li>Redis for caching and pub/sub, PostgreSQL for history, FastAPI for control</li>
+              <li>Prometheus and Grafana for live monitoring</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li>Python</li><li>asyncio</li><li>WebSockets</li><li>Redis</li><li>PostgreSQL</li>
+              <li>FastAPI</li><li>Docker</li><li>Azure</li><li>LLMs</li>
+            </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== Résumé ============================== -->
+    <section class="section resume" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <!-- Shown only when printing / saving as PDF -->
+        <div class="print-header">
+          <p class="print-name">Jacob Fullerton</p>
+          <p class="print-contact">websiteHello@jsfullerton.com · github.com/jfullerton44 · linkedin.com/in/jfullerton44 · jekapps.com</p>
+        </div>
+
+        <div class="section-head section-head-row">
+          <div>
+            <p class="eyebrow">Résumé</p>
+            <h2 id="experience-title">Experience</h2>
+          </div>
+          <button class="btn btn-ghost js-print" type="button" hidden>Save as PDF</button>
+        </div>
+
+        <p class="summary">
+          Senior Software Engineer with 4+ years of experience at Microsoft leading cloud infrastructure projects,
+          developer tooling, and AI incubations. Proven success in improving system reliability, reducing costs, and
+          mentoring technical teams. Passionate about scalable systems, DevOps, and applying AI to solve real-world
+          engineering challenges.
+        </p>
+
+        <ol class="timeline">
+          <li class="job">
+            <div class="job-head">
+              <h3>Microsoft <span class="role">Senior Software Engineer</span></h3>
+              <p class="when">Aug 2020 – Present · Seattle, WA</p>
+            </div>
+            <ul class="bullets">
+              <li>Led a mentoring ring supporting six Software Engineer 2s, providing technical guidance, career development, and regular 1:1s</li>
+              <li>Served as Intern Cohort Leader for three consecutive years</li>
+              <li>Acted as onboarding buddy for a newly hired Software Engineer 2, accelerating ramp-up and integration into the team</li>
+              <li>Conceived and filed three patent applications for original software innovations developed within my team</li>
+            </ul>
+
+            <div class="subrole">
+              <div class="job-head">
+                <h4>AI Incubation Project</h4>
+                <p class="when">Oct 2024 – Present</p>
+              </div>
+              <ul class="bullets">
+                <li>Integrated CUA (Computer Use Agent) and Chat Models into backend service</li>
+                <li>Contributed to development and deployment of custom computer use model</li>
+                <li>Engineered deployment pipelines, Azure DevOps extension, and virtual machine management service</li>
+                <li>Developed a hot pool management algorithm, cutting customer startup time by up to 90%</li>
+                <li>Authored onboarding documentation and acted as the primary point of contact for over 20 internal teams integrating with our service</li>
+              </ul>
+            </div>
+
+            <div class="subrole">
+              <div class="job-head">
+                <h4>Azure DevTest Labs</h4>
+                <p class="when">Dec 2022 – Oct 2024</p>
+              </div>
+              <ul class="bullets">
+                <li>Designed, implemented, and led the rollout of <a href="https://learn.microsoft.com/en-us/azure/devtest-labs/devtest-lab-hibernate-vm" target="_blank" rel="noopener">compute hibernation in DevTest Labs</a>, reducing customer costs by over $1M annually</li>
+                <li>Overhauled the alert monitoring system to streamline on-call responsibilities, decreasing transient incidents by 50%</li>
+                <li>Integrated core service components into additional Azure Services</li>
+                <li>Modernized and redeployed production AKS clusters, enhancing reliability</li>
+              </ul>
+            </div>
+
+            <div class="subrole">
+              <div class="job-head">
+                <h4><a href="https://github.com/microsoft/dev-tunnels" target="_blank" rel="noopener">Microsoft Dev Tunnels</a></h4>
+                <p class="when">Aug 2020 – Dec 2022</p>
+              </div>
+              <ul class="bullets">
+                <li>Developed key components of the Go SDK and maintained SDKs in C#, Java, TypeScript, and Rust</li>
+                <li>Implemented tunnel inspection in C# .NET for traffic visualization</li>
+                <li>Refactored all public REST APIs to align with best practices</li>
+                <li><a href="https://www.youtube.com/watch?v=yBiOGgUFD68" target="_blank" rel="noopener">Presented at Microsoft Build</a> and created demo video for Microsoft Learn</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="job">
+            <div class="job-head">
+              <h3>Prediction Market Arbitrage Bot <span class="role">Personal Project</span></h3>
+              <p class="when">Jan 2024 – Present</p>
+            </div>
+            <ul class="bullets">
+              <li>Designed and deployed a Docker-based application to Azure for arbitrage trading across prediction market platforms</li>
+              <li>Currently trading &gt; $50,000 volume per month with an average of 10% monthly return on $20,000 balance</li>
+              <li>Leveraged a combination of REST API calls and WebSockets to maintain real-time data and execute event-driven trades</li>
+              <li>Utilized LLM APIs to automate market discovery and analysis</li>
+            </ul>
+          </li>
+
+          <li class="job">
+            <div class="job-head">
+              <h3>Capital One <span class="role">Technology Internship Program</span></h3>
+              <p class="when">Jun 2019 – Aug 2019 · McLean, VA</p>
+            </div>
+            <ul class="bullets">
+              <li>Developed an end-to-end testing framework, reducing testing time by 80%</li>
+              <li>Designed an AWS workflow incorporating S3 triggers, Lambda, SQS, and SNS</li>
+              <li>Achieved AWS Certified Developer – Associate</li>
+            </ul>
+          </li>
+        </ol>
+
+        <div class="resume-grid">
+          <section class="resume-block" aria-labelledby="education-title">
+            <h2 id="education-title" class="block-title">Education</h2>
+            <h3 class="school">University of Virginia</h3>
+            <p>BS in Computer Science, Minor in Business</p>
+            <p class="when">May 2020 · Charlottesville, VA</p>
+            <p class="when">Major GPA: 3.93 / 4.0</p>
+
+            <h3 class="block-subtitle">Coursework</h3>
+            <ul class="plain-list">
+              <li>Advanced Software Development</li>
+              <li>Algorithms</li>
+              <li>Machine Learning</li>
+              <li>Program and Data Representation</li>
+              <li>Computer Architecture</li>
+              <li>Fundamentals of Electrical Engineering <span class="muted">(Teaching Assistant)</span></li>
+            </ul>
+          </section>
+
+          <section class="resume-block" id="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title" class="block-title">Skills</h2>
+
+            <h3 class="block-subtitle">Languages</h3>
+            <ul class="chips chips-sm">
+              <li>C#</li><li>Go</li><li>C/C++</li><li>Python</li><li>Java</li><li>JavaScript</li>
+              <li>TypeScript</li><li>HTML</li><li>LaTeX</li>
+            </ul>
+
+            <h3 class="block-subtitle">Cloud &amp; DevOps</h3>
+            <ul class="chips chips-sm">
+              <li>Azure</li><li>AKS</li><li>ARM</li><li>Azure RP</li><li>DevTest Labs</li><li>App Services</li>
+              <li>Cosmos DB</li><li>NoSQL</li><li>Kubernetes</li><li>Function Apps</li><li>Helm</li>
+              <li>Managed Identity</li><li>Authentication</li><li>Enterprise Applications</li>
+            </ul>
+
+            <h3 class="block-subtitle">Artificial Intelligence</h3>
+            <ul class="chips chips-sm">
+              <li>OpenAI CUA</li><li>MCP</li><li>Prompt Engineering</li><li>Chat Models</li>
+              <li>Azure AI Foundry</li><li>Single Prompt Context Management</li><li>GTA1</li>
+              <li>AI Tool Calls</li><li>AI Skills</li>
+            </ul>
+
+            <h3 class="block-subtitle">Concepts &amp; Frameworks</h3>
+            <ul class="chips chips-sm">
+              <li>.NET</li><li>Node.js</li><li>React</li><li>Git</li><li>OneBranch Pipelines</li>
+              <li>Semaphores / Multithreading</li><li>API Design</li>
+            </ul>
+
+            <h3 class="block-subtitle">Testing &amp; Monitoring</h3>
+            <ul class="chips chips-sm">
+              <li>Playwright</li><li>Postman</li><li>Insomnia</li><li>Kusto</li><li>Geneva</li><li>ICM</li>
+              <li>Application Insights</li><li>Azure Data Explorer</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== Contact ============================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Say hello</h2>
+        <p class="section-sub">Questions about one of the apps, an opportunity, or just want to talk shop? I'd love to hear from you.</p>
+        <p class="contact-email"><a href="mailto:websiteHello@jsfullerton.com">websiteHello@jsfullerton.com</a></p>
+        <ul class="contact-links">
+          <li><a href="https://github.com/jfullerton44" target="_blank" rel="me noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jfullerton44" target="_blank" rel="me noopener">LinkedIn</a></li>
+          <li><a href="https://cash.jekapps.com" target="_blank" rel="noopener">TrackYourCash</a></li>
+          <li><a href="https://1poker.app" target="_blank" rel="noopener">1Poker</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span class="js-year">2026</span> Jacob Fullerton · JekApps</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Keep the footer year current and offer a print-to-PDF résumé where printing is available.
+    document.querySelectorAll('.js-year').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+    if (typeof window.print === 'function') {
+      document.querySelectorAll('.js-print').forEach(function (btn) {
+        btn.hidden = false;
+        btn.addEventListener('click', function () { window.print(); });
+      });
+    }
+  </script>
+</body>
+</html>
